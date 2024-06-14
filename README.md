@@ -19,11 +19,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./Screenshot%202024-06-14%20at%2014-44-26%20Frontend%20Mentor%20NFT%20preview%20card%20component.png)
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [NFT Preview Card Component](https://gideon-w.github.io/NFT-Preview-Card-Component/)
 
 ### Built with
 
