@@ -1,0 +1,189 @@
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+  :root{
+    /* TYPOGRAPHY */
+    --FF-Type: "Outfit", sans-serif;
+
+    --FW-Light:300;
+    --FW-Normal:400;
+    --FW-Bold:600;
+
+    --FS-normal: 1.125rem;
+
+    /* COLORS */
+    --Primary-Soft-Blue: hsl(215, 51%, 70%);
+    --Primary-Cyan: hsl(178, 100%, 50%);
+
+    /* Main Background color */
+    --Neutral-Very-Dark-Blue-Main: hsl(217, 54%, 11%);
+
+    /* Card Background color */
+    --Neutral-Very-Dark-Blue-Card: hsl(216, 50%, 16%);
+
+    /* Line color */
+    --Neutral-Very-Dark-Blue-Line: hsl(215, 32%, 27%);
+
+    --Neutral-White: hsl(0, 0%, 100%);
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: var(--Neutral-Very-Dark-Blue-Main);
+    padding-inline: 1em;
+    padding-block: 5em;
+  }
+
+  .card{
+    background-color: var(--Neutral-Very-Dark-Blue-Card);
+    font-family: var(--FF-Type);
+    border-radius: 1em;
+    padding-block: 1em;
+    margin-inline: auto;
+    max-width: 23em;
+  }
+
+
+/* At the top of the card */
+  .equilibrium-image-wrapper{
+    position: relative;
+    max-width: 90%;
+    margin-inline: auto;
+  }
+  .equilibrium-image-wrapper img{
+    max-width: 100%;
+    height:auto;
+    display: block;
+    border-radius: .6em;
+  }
+  .icon{
+    display: flex;
+    justify-content: center;
+    background-color: hsla(178, 100%, 50%, 0.384);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+  .icon img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+  }
+  .icon:hover,
+  .icon:focus{
+    opacity: 1;
+    cursor: pointer;
+  }
+
+
+/* Middle of the card */
+  .info-wrapper{
+    max-width: 90%;
+    margin-inline: auto;
+  }
+  h1,h1 a{
+    color: var(--Neutral-White);
+    font-weight: var(--FW-Normal);
+    margin-top: 1em;
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+
+  h1 a:hover,
+  h1 a:focus{
+    color: var(--Primary-Cyan);
+    cursor: pointer;
+  }
+
+  p{
+    font-size: var(--FS-normal);
+    color: var(--Primary-Soft-Blue);
+    font-weight: var(--FW-Light);
+    margin-top: 1em;
+  }
+
+
+
+  article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--FS-normal);
+    margin-top: 1em;
+    border-bottom: .1px solid var(--Neutral-Very-Dark-Blue-Line);
+    padding-bottom: 1em;
+    column-gap: 1em;
+  }
+  .ethereum,
+  .clock{
+    display: flex;
+    align-items: center;
+    column-gap: .4em;
+  }
+  .ethereum{
+    color: var(--Primary-Cyan);
+    font-weight: var(--FW-Bold);
+    
+  }
+  .clock{
+    color: var(--Primary-Soft-Blue);
+    font-weight: var(--FW-Light);
+   
+  }
+  
+
+/* bottom of the card */
+  .profile-icon{
+    max-width: 90%;
+    margin-inline: auto;
+    display: flex;
+    column-gap: 1em;
+    margin-top: 1em;
+    align-items: center;
+  }
+  .profile-icon img{
+    width: 45px;
+    border: 1px solid var(--Neutral-White);
+    border-radius: 25px;
+    height: auto;
+    display: block;
+  }
+  figcaption,figcaption a{
+    color: var(--Neutral-White);
+    font-size: var(--FS-normal);
+    text-decoration: none;
+  }
+  figcaption a:hover,
+  figcaption a:focus{
+    color: var(--Primary-Cyan);
+    cursor: pointer;
+  }
+  figcaption span{
+    color: var(--Primary-Soft-Blue);
+  }
+
+
+
+
+  .attribution {
+    font-size:1.3rem;
+    text-align: center;
+    margin-block: .5em;
+    padding: .5em;
+    font-family: var(--FF-Type);
+    color: whitesmoke;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);     
+  }
+
+  .attribution a:hover,
+  .attribution a:focus{
+    color: papayawhip;
+  }
